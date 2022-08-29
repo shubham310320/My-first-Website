@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: #444;
+  border-top: 10px solid #1098ad;
+  position: relative;
+}
+
+/* TEXT RELATED------------------------------- */
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+}
+
+/* HEADING ONLY----------------------------------- */
+
+.main-heading {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.primary-heading {
+  font-size: 40px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+h2::before {
+  content: "top";
+  text-transform: uppercase;
+  color: #444;
+  background-color: #ffe70e;
+  font-size: 16px;
+  padding: 5px 10px;
+  position: absolute;
+  right: -25px;
+  top: -10px;
+}
+
+.author {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.secondary-heading {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.tertiary-heading {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* LINKS ONLY------------------------------ */
+
+nav a {
+  font-size: 18px;
+  display: inline-block;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+nav a:last-child {
+  margin-right: 0;
+}
+
+a:link,
+a:visited {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: rgb(7, 96, 168);
+  background-color: rgb(41, 240, 117);
+  font-weight: bold;
+}
+
+/* IMAGES */
+
+.main-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+/* LISTS------------------------------------ */
+ol,
+ul {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+/* ASIDE----------------------------------- */
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  width: 500px;
+  padding: 50px 0;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+.like {
+  cursor: pointer;
+  font-size: 22px;
+  background-color: #252020;
+  border-radius: 500px;
+  color: #ad1010;
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+article {
+  margin-bottom: 60px;
+}
