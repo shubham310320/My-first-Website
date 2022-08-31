@@ -18,25 +18,23 @@ h3 {
 }
 h1::first-letter {
   font-style: normal;
-  margin-right: 5px;
+  /* margin-right: 5px; */
 }
 p {
   font-size: 22px;
   line-height: 1.5;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
 
-
-
 .container {
-  width: 800px;
+  width: 1200px;
   margin: 0 auto;
 }
 
 .main-header {
   background-color: #f7f7f7;
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 /* HEADING ONLY----------------------------------- */
@@ -49,7 +47,7 @@ p {
 
 .primary-heading {
   font-size: 40px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   position: relative;
 }
 
@@ -72,8 +70,8 @@ h2::before {
 
 .secondary-heading {
   font-size: 30px;
-  margin-bottom: 20px;
-  margin-top: 40px;
+  /* margin-bottom: 20px; */
+  /* margin-top: 40px; */
 }
 
 .tertiary-heading {
@@ -87,12 +85,12 @@ h2::before {
 nav a {
   font-size: 18px;
   display: inline-block;
-  margin-right: 30px;
-  margin-top: 10px;
+  /* margin-right: 30px; */
+  /* margin-top: 10px; */
 }
 
 nav a:last-child {
-  margin-right: 0;
+  /* margin-right: 0; */
 }
 
 a:link,
@@ -113,19 +111,19 @@ a:active {
 .main-img {
   width: 100%;
   height: auto;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 
 /* LISTS------------------------------------ */
 ol,
 ul {
-  margin-left: 50px;
-  margin-bottom: 20px;
+  /* margin-left: 50px; */
+  /* margin-bottom: 20px; */
 }
 
 li {
   font-size: 20px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 li:first-child {
@@ -134,7 +132,7 @@ li:first-child {
 
 li:last-child {
   font-style: italic;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
 }
 
 /* ASIDE----------------------------------- */
@@ -169,5 +167,99 @@ aside {
 }
 
 article {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
+}
+
+/* ----------------------------FLOATS */
+.author-img {
+  float: left;
+}
+
+.author {
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 15px 15px;
+}
+
+/* ----------------------------FLEXBOX */
+/* .container {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+} */
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.article-header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.para-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+ol,
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 30px;
+}
+
+.list-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px 40px;
+  max-width: 300px;
+}
+
+.related {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+/* .content-box {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+} */
+
+/* ---------------------------GRID LAYOUT */
+.container {
+  display: grid;
+  grid-template-columns: 825px 1fr;
+  column-gap: 75px;
+  row-gap: 70px;
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1/-1;
+}
+
+footer {
+  grid-column: 1/-1;
 }
